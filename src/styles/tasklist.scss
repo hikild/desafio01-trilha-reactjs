@@ -19,6 +19,7 @@ section.task-list {
     }
 
     .input-group {
+      position: relative;
       display: flex;
       gap: 0.25rem;
       align-items: center;
@@ -57,6 +58,14 @@ section.task-list {
         &:hover {
           filter: brightness(0.95);
         }
+      }
+
+      span.error-text {
+        font-size: .80rem;
+        color: red;
+        left: 2px;
+        position: absolute;
+        bottom: -20px;
       }
     }
   }
